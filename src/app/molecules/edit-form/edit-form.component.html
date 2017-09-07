@@ -1,0 +1,6 @@
+<div [formGroup]="form">
+  <div *ngFor="let fo of dataList" class="form-group">
+    <label  [attr.for]="fo.key">{{fo.label}}</label>
+    <input [type]="fo.type" [formControlName]="fo.key" class="form-control" [id]="fo.key" [value]="fo.value" >
+  </div>
+</div>

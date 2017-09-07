@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/bootstrap-only-css/dist/bootstrap.css",
+        "assets/style/app.scss"
       ],
       "scripts": [],
       "environments": {
@@ -61,7 +62,7 @@
       "directive": true,
       "module": false,
       "pipe": true,
-      "service": true
+      "service": false
     }
   }
 }

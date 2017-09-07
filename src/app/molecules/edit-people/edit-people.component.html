@@ -1,0 +1,12 @@
+<div class="modal">
+  <div class="modal-content">
+    <h4 class="clearfix">Edit People <span class="close pull-right" (click)=closeModal()>X</span></h4>
+    <hr/>
+    <div class="inner-content">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <app-edit-form [dataList]="formOptions" [form]="form"></app-edit-form>
+      <div class="form-group clearfix"><button class="btn btn-primary pull-right" type="submit">Submit</button></div>
+    </form>
+    </div>
+  </div>
+</div>

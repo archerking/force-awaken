@@ -1,0 +1,5 @@
+<div class="row" *ngIf="!isError && peopleList">
+  <app-people-item [items]="peopleList"></app-people-item>
+</div>
+<div class="row" *ngIf="!isError && peopleList"><app-paginate [count]="swapiData.count"></app-paginate></div>
+<div *ngIf="isError" class="alert row"><p class="alert-danger">Some error occured</p></div>
